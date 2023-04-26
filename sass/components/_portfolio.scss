@@ -1,0 +1,82 @@
+
+.portfolio {
+    padding: 94px 0px 94px 0px;
+}
+
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.pictures-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    column-gap: 30px;
+}
+
+.team-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.text {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    ;
+    border-top: none;
+}
+
+.portfolio-item {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    color: var(--main-color);
+    margin-bottom: 4px;
+}
+
+.portfolio-item-first {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
+    color: var(--description-color);
+}
+
+.footer-input-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--link-color);
+    margin-bottom: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(33, 150, 243, 0.9);
+}
+
+.overlay-text-portfolio {
+    padding: 63px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(28/18);
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}

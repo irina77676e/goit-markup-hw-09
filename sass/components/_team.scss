@@ -1,0 +1,106 @@
+/* TEAM */
+.team {
+    background-color: #f5f4fa;
+
+    @media screen and (min-width:1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
+
+    @media screen and (min-width:480px) and (max-width:1199px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.team-item {
+    gap: 30px;
+
+    @media screen and (min-width:1200px){
+        display: flex;
+    }
+    
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+}
+
+.team-box {
+    background: var(--link-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width:480px) and (max-width:767px){
+        margin-bottom: 30px;
+    }
+}
+.team-box:last-child {
+    margin-bottom: 0;
+}
+
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.team-workers {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--description-color);
+    margin-bottom: 16px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width:1200px){
+        padding-bottom: 30px;
+        gap: 10px;
+    }
+        @media screen and (min-width:768px) and (max-width:1199px){
+            gap: 10px;
+            padding-bottom: 24px;
+        }
+
+    @media screen and (min-width:480px) and (max-width:767px){
+        padding-bottom: 24px;
+        gap:30px;
+    }
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: #AFB1B8;
+    background-color: var(--link-color);
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--link-color);
+        background-color: var(--accent-color);
+    }
+}
+
+.social-icons {
+    fill: currentColor;
+}

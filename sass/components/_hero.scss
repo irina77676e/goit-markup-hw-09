@@ -1,0 +1,78 @@
+.hero__main {
+    text-align: center;
+}
+.hero {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #C4C4C4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    
+    padding-top: 118px;
+    padding-bottom: 118px;
+    
+    max-width: 480px;
+    max-height: 400px;
+    
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/hero/header-img-mob-@1x.jpg);
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/hero/header-img-mob-@2x.jpg);
+    }
+    
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header-img-tab-@1x.jpg);
+        
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header-img-tab-@2x.jpg);
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        max-height: 600px;
+    
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hero/img@1x.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hero/img@2x.jpg);
+        }
+    } 
+}  
+.hero__title {
+    top: 50%;
+    bottom: 50%;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--link-color);
+    width: 317px;
+    margin-bottom: 35px;
+    text-align: center;
+    margin: 0 auto;
+
+
+    @media screen and (min-width:1200px){
+        font-size: 44px;
+        line-height: calc(60 / 44);
+        width: 696px;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width:1199px) {
+        font-size: 26px;
+        line-height: calc(42/26);
+        width: 360px;
+        margin-bottom: 30px;
+
+    }
+}

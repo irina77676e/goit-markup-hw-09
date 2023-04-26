@@ -1,0 +1,97 @@
+.about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+.about__us {
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        list-style-type: none;
+        gap: 30px;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+}
+.about__item{
+    @media screen and (min-width:320px) and (max-width: 767px){
+        width: 100%;
+    }
+}
+
+.about__item:not(:last-child) {
+     @media screen and (min-width: 320px) and (max-width: 767.5px) {
+        margin-bottom: 30px;
+    }
+}
+.about__item {
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+}
+
+.about__us__box {
+    border-radius: 4px;
+    background: #F5F4FA;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 120px;
+    
+     @media screen and (min-width:768px) and (max-width:1199px){
+        padding: 25px 142px;
+        width: 354px;
+        display: flex;
+    }
+     @media screen and (min-width:480px) and (max-width:767px){
+        padding: 25px 190px;
+    }
+}
+
+.about__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
+    text-align: left;
+    margin-bottom: 10px;
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+        text-align: center;
+    }
+}
+
+.about__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--description-color);
+    text-align: left;
+}
